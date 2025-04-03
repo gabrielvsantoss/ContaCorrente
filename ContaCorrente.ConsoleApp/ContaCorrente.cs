@@ -46,7 +46,7 @@ namespace ContaCorrente.ConsoleApp
 
             else if (valorGastoTotal < saldoDisponivel)
             {
-                saldoDisponivelComOLimite = (saldoDisponivelComOLimite + limiteDisponivel) - quantiaResgatada;
+                saldoDisponivelComOLimite = saldoDisponivelComOLimite - quantiaResgatada;
                 Console.WriteLine("Saque efetuado com sucesso clique ENTER para realizar uma nova operaçãp");
                 Console.ReadLine();
                 Extrato[transacoes] = $"Saque: {quantiaResgatada}, Valor Final:{saldoDisponivelComOLimite}";
@@ -71,7 +71,7 @@ namespace ContaCorrente.ConsoleApp
             Console.WriteLine("Depósito efetuado com sucesso digite ENTER para realizar uma nova operaçãp");
             Console.ReadLine();
 
-            saldoDisponivelComOLimite = (saldoDisponivel + limiteDisponivel) - quantiaDepositada;
+            saldoDisponivelComOLimite = saldoDisponivel - quantiaDepositada;
             Extrato[transacoes] = $"Depósito: {quantiaDepositada}, Valor Final:{saldoDisponivelComOLimite}";
             transacoes++;
         }
