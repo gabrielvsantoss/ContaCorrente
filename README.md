@@ -8,7 +8,7 @@
 
 ## Funcionalidades:
 
-**Saque**: Permite sacar dinheiro da conta.
-**Depósito** Permite depositar dinheiro na conta;
-**Visualizar Extrato** Permite visualizar operações realizadas
-**Depósito entre contas**  Permite transferir para uma conta.
+- **Saque**: Permite sacar dinheiro da conta.
+- **Depósito** Permite depositar dinheiro na conta;
+- **Visualizar Extrato** Permite visualizar operações realizadas
+- **Depósito entre contas**  Permite transferir para uma conta.
